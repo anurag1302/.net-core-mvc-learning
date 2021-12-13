@@ -352,3 +352,5 @@ C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\MVCDemo.csproj
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\MVCDemo.dll
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\MVCDemo.pdb
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\MVCDemo.genruntimeconfig.cache
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Sample\Index.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Sample\Details.cshtml.g.cs
