@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVCDemo.Models;
+using System;
+using System.Linq;
 
 namespace MVCDemo.Controllers
 {
@@ -24,6 +26,24 @@ namespace MVCDemo.Controllers
                 Id=101,
                 Name="John",
                 Occupation="Fireman"
+            };
+
+            return View(model);
+        }
+
+        public IActionResult Demo()
+        {
+            ViewData["City"] = "Delhi";
+            ViewData["Country"] = "India";
+            ViewData["Continent"] = "Asia";
+
+            Console.WriteLine(ViewData.Keys);
+
+            var model = new DemoViewModel
+            {
+                ViewDataCount=ViewData.Count,
+                ViewDataKeys=ViewData.Keys.ToList(),
+                ViewDataValues=ViewData.Values.ToList()
             };
 
             return View(model);

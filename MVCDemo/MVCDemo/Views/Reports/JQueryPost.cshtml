@@ -1,0 +1,56 @@
+﻿@model RegistrationViewModel
+
+<div class="row">
+    <div class="col-lg-12">
+        <form method="post" id="RegistrationForm">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="City"></label>
+                <input asp-for="City" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender"></label>
+                <input asp-for="Gender" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Number"></label>
+                <input asp-for="Number" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="XYZ"></label>
+                <input type="text" asp-for="XYZ" class="form-control" />
+            </div>
+            <input type="button" value="Submit" class="btn btn-primary" id="btnSubmit" />
+            <img src="~/images/loader.gif" id="loader" style="display:none" />
+        </form>
+    </div>
+</div>
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('#btnSubmit').on('click', function () {
+                $('#loader').css('display','block');
+                $.ajax(
+                    {
+                        type: 'POST',
+                        url: '/Reports/JQueryPost',
+                        data: $('#RegistrationForm').serialize(),
+                        success: function (response) {
+                            $('#loader').css('display', 'none');
+                            alert(response);
+                        },
+                        error: function (xhr) {
+                            $('#loader').css('display', 'none');
+                            console.log(xhr);
+                        }
+
+                    });
+            })
+        });
+    </script>
+
+}

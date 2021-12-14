@@ -1,0 +1,21 @@
+﻿@model DemoViewModel
+
+<div>
+    <p>Count - @Model.ViewDataCount</p>
+    <hr />
+    <p>Keys: </p>
+    <ul>
+        @foreach (var item in Model.ViewDataKeys)
+        {
+            <li>@item</li>
+        }
+    </ul>
+    <hr />
+    <p>Values : </p>
+    <ul>
+        @foreach (var item in Model.ViewDataValues)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</div>

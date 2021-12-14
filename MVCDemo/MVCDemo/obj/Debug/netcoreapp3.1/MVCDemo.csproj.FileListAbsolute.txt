@@ -354,3 +354,6 @@ C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\MVCDemo.pdb
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\MVCDemo.genruntimeconfig.cache
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Sample\Index.cshtml.g.cs
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Sample\Details.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Sample\Demo.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Reports\Index.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Reports\JQueryPost.cshtml.g.cs
