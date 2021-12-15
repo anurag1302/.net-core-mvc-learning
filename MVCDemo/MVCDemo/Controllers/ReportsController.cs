@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MVCDemo.Models;
+using System.Collections.Generic;
 
 namespace MVCDemo.Controllers
 {
@@ -47,6 +48,13 @@ namespace MVCDemo.Controllers
         public IActionResult JQueryPost(RegistrationViewModel model)
         {
             return Content($"{model.Name}{"--"}{model.City}{"--"}{model.Gender}{"--"}{model.Number}");
+        }
+
+        public IActionResult Person()
+        {
+            var persons = Data.GetPersons();
+
+            return View(persons);
         }
     }
 }
