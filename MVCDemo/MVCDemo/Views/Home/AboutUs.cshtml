@@ -1,0 +1,28 @@
+﻿<h1>About Us</h1>
+<h2>We are a very good company !!!</h2>
+
+<input type="button" value="GetEmployeeDetails" class="btn btn-primary" id="btnGetEmployeeDetails"/>
+
+<div id="divData" class="data" style="background-color:brown"></div>
+
+@section Scripts
+{
+<script>
+    $(document).ready(function () {
+
+        $('#btnGetEmployeeDetails').on('click', function () {
+            $.ajax({
+                url: '/Home/GetEmployeeDetails',
+                type: 'GET',
+                success: function (response) {
+                    $('.data').html(response);
+                    console.log(response);
+                },
+                error: function (xhr) {
+                    console.log(xhr);
+                }
+            })
+        });
+    });
+</script>
+}

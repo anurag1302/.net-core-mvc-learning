@@ -1,8 +1,13 @@
-﻿@{
+﻿@model PersonViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h2>Hello from Index View</h2>
+    <div style="background-color:red">
+        <partial name="~/Views/Partials/_EmployeeDetailsPartial.cshtml" for="@Model" />
+    </div>
+    
     
 </div>
