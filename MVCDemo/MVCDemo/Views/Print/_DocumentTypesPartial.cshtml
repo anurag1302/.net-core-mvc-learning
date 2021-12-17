@@ -1,0 +1,30 @@
+﻿@model List<DocumentType>
+
+<table border="1" style="font-family:Arial;width:100%;background-color:coral">
+    <thead>
+        <tr>
+            <td align="center">Document Id</td>
+            <td align="center">Document Type</td>
+            <td align="center">Extension</td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count() > 0)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td align="center">@item.DocumentId</td>
+                    <td align="center">@item.DocType</td>
+                    <td align="center">@item.DocExtension</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">No Records Found</td>
+            </tr>
+        }
+    </tbody>
+</table>

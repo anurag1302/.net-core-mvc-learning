@@ -406,3 +406,6 @@ C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Areas\Da
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Areas\Reports\Views\Sample\Index.cshtml.g.cs
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Partials\_EmployeeDetailsPartial.cshtml.g.cs
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutUs.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Print\Index.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Print\_DocumentsPartial.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Print\_DocumentTypesPartial.cshtml.g.cs

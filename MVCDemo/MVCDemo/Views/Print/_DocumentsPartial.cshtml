@@ -1,0 +1,32 @@
+﻿@model List<PrintViewModel>
+
+<table border="1" style="font-family:Arial;width:100%">
+    <thead>
+        <tr>
+            <td align="center">Id</td>
+            <td align="center">Name</td>
+            <td align="center">Location</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count() > 0)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td align="center">@item.DocumentId</td>
+                    <td align="center">@item.DocumentName</td>
+                    <td align="center">@item.DocumentLocation</td>
+                    <td align="center"><button id="btnClick" data-attr="@item.DocumentId">Click</button></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">No Records Found</td>
+            </tr>
+        }
+    </tbody>
+</table>

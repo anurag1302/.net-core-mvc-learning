@@ -1,0 +1,40 @@
+﻿@model List<PrintViewModel>
+
+<h2>Print Controller - Index View</h2>
+
+<h3>List of Documents !!!</h3>
+
+
+<partial name="_DocumentsPartial" for="@Model" />
+
+<div id="divDocData" style="margin-top:20px;"></div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('body #btnClick').on('click', function (e) {
+
+                e.preventDefault();
+
+                let id = $(this).attr('data-attr');
+
+                console.log(id);
+
+                $.ajax(
+                    {
+                        url: '/Print/GetDocumentDatabyId',
+                        data: { "docId":id},
+                        success: function (response) {
+                            console.log(response);
+                            $('#divDocData').html('');
+                            $('#divDocData').html(response);
+                        },
+                        error: function (xhr) {
+                            console.log(xhr);
+                        }
+                    });
+            })
+        })
+    </script>
+}
