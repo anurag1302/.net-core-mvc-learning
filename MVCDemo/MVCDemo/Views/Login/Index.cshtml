@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-lg-6 container border-dark">
-        <form method="post">
+        <form id="LoginForm" method="post">
             <div class="form-group">
                 <label asp-for="Email"></label>
                 <input asp-for="Email" class="form-control" />
@@ -17,7 +17,8 @@
                 <div asp-validation-summary="All" class="text-danger"></div>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login" />
+                @*<input type="submit" class="btn btn-primary" value="Login" />*@
+                <input id="btnLogin" type="button" class="btn btn-dark" value="Login" />
             </div>
         </form>
         @if (ViewBag.Success != null)
@@ -26,5 +27,36 @@
                 @ViewBag.Success
             </div>
         }
+        <div class="alert-primary alert" id="divAlert">
+
+        </div>
     </div>
 </div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('#btnLogin').on('click', function () {
+                $('span').text('');
+                $('#divAlert').text('');
+                $.ajax(
+                    {
+                        url: '/Login/Submit',
+                        data: $('#LoginForm').serialize(),
+                        type:'POST',
+                        success: function (response) {
+                            $('#divAlert').text('');
+                            $('#divAlert').text(response.message);
+                        },
+                        error: function (xhr) {
+                            let validationErrors = xhr.responseJSON;
+                            for (var i = 0; i < validationErrors.length; i++) {
+                                $('span[data-valmsg-for="' + validationErrors[i].key + '"]').text(validationErrors[i].errors[0]);
+                            }
+                        }
+                    });
+            });
+        })
+    </script>
+}
