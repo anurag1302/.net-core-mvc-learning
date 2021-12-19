@@ -1,0 +1,30 @@
+﻿@model LoginViewModel
+
+<div class="row">
+    <div class="col-lg-6 container border-dark">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div asp-validation-summary="All" class="text-danger"></div>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Login" />
+            </div>
+        </form>
+        @if (ViewBag.Success != null)
+        {
+            <div class="alert-info alert">
+                @ViewBag.Success
+            </div>
+        }
+    </div>
+</div>

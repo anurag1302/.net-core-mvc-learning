@@ -409,3 +409,4 @@ C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Ho
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Print\Index.cshtml.g.cs
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Print\_DocumentsPartial.cshtml.g.cs
 C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Print\_DocumentTypesPartial.cshtml.g.cs
+C:\.net-core-mvc-learning\MVCDemo\MVCDemo\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs

@@ -26,8 +26,15 @@ using MVCDemo.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\.net-core-mvc-learning\MVCDemo\MVCDemo\Views\_ViewImports.cshtml"
+using MVCDemo.Models.Login;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"67ae4ff31a8d0dabe4d91904a7485b369b85855f", @"/Views/Print/_DocumentTypesPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"20c82645f380a66647f653cb87c3f0bf90f91097", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"10ec2b5358f2c267ea992b77877dbf24f72fa00c", @"/Views/_ViewImports.cshtml")]
     public class Views_Print__DocumentTypesPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<DocumentType>>
     {
         #pragma warning disable 1998
