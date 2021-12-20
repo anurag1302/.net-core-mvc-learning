@@ -33,8 +33,15 @@ using MVCDemo.Models.Login;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\.net-core-mvc-learning\MVCDemo\MVCDemo\Views\_ViewImports.cshtml"
+using MVCDemo.Models.Admission;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"10ec2b5358f2c267ea992b77877dbf24f72fa00c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c39bb88dd2f7176bfc1bfb67b00077c85c07f17f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998
