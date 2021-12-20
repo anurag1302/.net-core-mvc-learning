@@ -46,7 +46,7 @@ namespace MVCDemo.Controllers
                     new ErrorMessage
                     {
                         Key = "Password",
-                        Errors = new string[] { "Invalid Login Attempt!!!" }
+                        Errors = new string[] { "Invalid Login Attempt!!!", "please try again !!!" }
                     }
                 };
 
