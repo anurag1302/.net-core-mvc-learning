@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MVCDemo.AppData;
 
 namespace MVCDemo
 {
@@ -19,6 +20,7 @@ namespace MVCDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<Database>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

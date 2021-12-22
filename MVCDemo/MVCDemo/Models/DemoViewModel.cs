@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace MVCDemo.Models
 {
@@ -7,5 +8,8 @@ namespace MVCDemo.Models
         public int ViewDataCount { get; set; }
         public List<string> ViewDataKeys { get; set; }
         public List<object> ViewDataValues { get; set; }
+
+        public DateTime DOB { get; set; }
+
     }
 }

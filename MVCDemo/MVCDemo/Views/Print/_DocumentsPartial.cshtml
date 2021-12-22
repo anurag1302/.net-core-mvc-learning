@@ -19,6 +19,7 @@
                     <td align="center">@item.DocumentName</td>
                     <td align="center">@item.DocumentLocation</td>
                     <td align="center"><button id="btnClick" data-attr="@item.DocumentId">Click</button></td>
+                    <td><a asp-controller="Print" asp-action="GetDatabyId" asp-route-id="@item.DocumentId">Update</a></td>
                 </tr>
             }
         }
