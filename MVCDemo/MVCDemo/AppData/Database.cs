@@ -20,8 +20,26 @@ namespace MVCDemo.AppData
             return _configuration.GetConnectionString("DefaultConnection");
         }
 
+        public string CountryInfo
+        {
+            get
+            {
+                return _configuration.GetSection("Country").GetSection("India").Value;
+            }
+        }
+
+        public string DbConnection1
+        {
+            get
+            {
+                return _configuration.GetConnectionString("DefaultConnection");
+            }
+            
+        }
+
         public List<PersonModel> GetPersonsData()
         {
+            var abc = CountryInfo;
             var persons = new List<PersonModel>();
 
             using(var connection = new SqlConnection(DbConnection()))
@@ -48,5 +66,7 @@ namespace MVCDemo.AppData
             }
             return persons;
         }
+
+
     }
 }
