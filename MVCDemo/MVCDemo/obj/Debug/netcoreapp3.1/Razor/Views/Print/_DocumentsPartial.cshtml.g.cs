@@ -40,8 +40,15 @@ using MVCDemo.Models.Admission;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\.net-core-mvc-learning\MVCDemo\MVCDemo\Views\_ViewImports.cshtml"
+using MVCDemo.Models.Roles;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c0d0cb36926eb11b053e713db5e57945a2eee0f8", @"/Views/Print/_DocumentsPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c39bb88dd2f7176bfc1bfb67b00077c85c07f17f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"afe135d5a16e82b549f4c63cd84f3659611f4279", @"/Views/_ViewImports.cshtml")]
     public class Views_Print__DocumentsPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<PrintViewModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Print", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -132,7 +139,7 @@ using MVCDemo.Models.Admission;
 #line hidden
 #nullable disable
             WriteLiteral("\">Click</button></td>\r\n                    <td>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0d0cb36926eb11b053e713db5e57945a2eee0f86182", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0d0cb36926eb11b053e713db5e57945a2eee0f86359", async() => {
                 WriteLiteral("Update");
             }
             );
